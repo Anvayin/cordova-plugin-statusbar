@@ -65,6 +65,11 @@
       <header-file src="src/ios/CDVStatusBar.h"/>
       <source-file src="src/ios/CDVStatusBar.m"/>
 
+      <config-file target="*-Info.plist" parent="UIRequiresFullScreen">
+	    <true/>
+      </config-file>
+
+      
       <config-file parent="NSAppTransportSecurity" target="*-Info.plist">
         <dict>
           <key>NSAllowsArbitraryLoads</key>
